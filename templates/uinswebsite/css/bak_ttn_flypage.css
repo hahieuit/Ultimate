@@ -1,0 +1,161 @@
+@charset "utf-8";
+/* CSS Document */
+body{
+	}
+#ttn_prdDetail_wrapper{
+
+}
+	h1.prdName{
+		color:#3f3f3f;
+		font-size:22px;
+		font-family:Trajan Pro;
+		font-weight:bold;
+		margin:5px 0 10xp ;
+		padding:0;
+		
+	} 
+
+	.prdImages{
+	float:left;
+	width: 40%;
+	}
+
+	.prdImages h2{
+	color:#BF0000;
+	text-transform:uppercase;
+	font-size:17px;
+	font-family:Trajan Pro;
+	margin:15px 0px 20px 0px;y
+	}
+
+	.alter_img{
+	float:left;
+	}
+	
+	.prdDesc_wrapper{
+	float:right;
+	width:56%;
+	}
+    
+	
+	.prdImages .mainImage{
+	width:340px;
+	height:340px; 
+	overflow:hidden;
+	margin-bottom:20px;
+	}
+	.prdImages img{
+			width:340px!important; 
+			height:auto!important;
+		  /* width:auto!important; */
+			
+	}
+     
+
+	
+
+
+	.prdImages #altviews img{
+			width:74px!important;			
+			margin: 0 10px 15px 0;
+			height:auto!important;
+	}
+
+h3.prdDetail_title{
+	color:#bf0000;
+	font-family:Trajan Pro;
+	font-size:20px;
+	font-weight:bold;
+	padding:0;
+	margin: 15px 0 4px;	
+}
+table.prdDesc{
+	color:#8f0000;
+	font-family:Century Gothic;
+	
+	font-size:13px;
+	
+}
+table.prdDesc .prdDesc_label{
+	color:#666666;
+	padding-right:30px;
+	
+}
+table.prdPrice{
+	color:#000;
+	
+}
+table.prdPrice td{
+	border: 1px solid #666666;
+	text-align:center;
+	padding: 2px 0;
+}
+table.prdPrice thead td{
+	text-transform:uppercase;
+	text-align:center;
+	padding: 2px 20px;
+	font-size:13px;
+	font-weight:bold;
+	font-family:Century Gothic;
+	
+}
+div.prdBotNote{
+	padding: 0 0 20px 20px;
+	color:#3f3f3f;
+}
+
+/*------feature products style-----*/
+.featureItem_wrapper .ttn_thumbImg,.featureItem_wrapper .ttn_thumbImg img{
+	width:85px!important;
+	
+
+}
+
+#ttn-right{
+	position:relative;
+	z-index:1;
+}
+
+.ttn_hidden{
+		display:none;
+	}
+.ttn_display{
+		display:block;
+}
+.featureItem_wrapper,
+.browseProductImageContainer,
+#ttn-fp-colleft-inner{
+		position:relative;
+		height:90px;
+		
+}
+.browseProductImageContainer{
+	padding:5px 0px 15px;
+	
+}
+.browseProductImageContainer{ height:140px;}
+.browseProductImageContainer div{ height:90px; text-align: center;}
+
+.browseProductImageContainer .ttn_display,
+#ttn-fp-colleft-inner .ttn_display{
+		position:absolute;
+		margin: 0px 0 0 0px;
+		top:-30%; left:120px;
+		border:5px solid #000;
+		z-index:10000;
+
+		
+}
+
+.featureItem_wrapper .ttn_display
+{
+		position:absolute;
+		margin: 0px 0 0 0px;
+		top:-30%; right:100px;
+		border:5px solid #000;
+		z-index:10000;
+
+		
+}
+
+

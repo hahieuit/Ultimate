@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="module" version="3.2" client="site" method="upgrade">
+    <name>AP Quick Contact</name>
+    <creationDate>January 2014</creationDate>
+    <author>Aplikko</author>
+	<copyright>Copyright @ 2014 Aplikko.com. All rights reserved.</copyright>
+    <license>http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL</license>
+    <authorEmail>contact@aplikko.com</authorEmail>
+    <authorUrl>http://www.aplikko.com</authorUrl>
+	<version>3.2</version>
+	<description></description>
+	<scriptfile>admin/installscript.php</scriptfile>
+	<files>	
+		<filename module="mod_ap_quick_contact">mod_ap_quick_contact.php</filename>
+		<folder>admin</folder>
+		<folder>assets</folder>
+		<folder>tmpl</folder>
+		<filename>index.html</filename>  
+    </files>
+	<languages>	
+		<language tag="en-GB">en-GB.mod_ap_quick_contact.ini</language>
+	</languages>	
+	<config>
+		<fields name="params">
+           <fieldset name="basic" addfieldpath="/modules/mod_ap_quick_contact/admin">
+			  <field type="description" />
+            </fieldset>
+				<fieldset name="contact_form_settings">
+				<field
+					name="ap_load_validate"
+					type="apradio"
+					default="1"
+					class="btn-group"
+					label="MOD_AP_QUICK_CONTACT_FIELD_LOAD_VALIDATE_LABEL"
+					description="MOD_AP_QUICK_CONTACT_FIELD_LOAD_VALIDATE_DESC" >
+					<option value="0" sub_fields="">JNO</option>
+					<option value="1" sub_fields="ap_load_scripts">JYES</option>
+				</field>
+				<field
+					name="ap_load_scripts"
+					type="list"
+					default="0"
+					label="MOD_AP_QUICK_CONTACT_FIELD_LOAD_SCRIPTS_LABEL"
+					description="MOD_AP_QUICK_CONTACT_FIELD_LOAD_SCRIPTS_DESC" >
+					<option value="0">addCustomTag</option>
+					<option value="1">addBody</option>
+				</field>
+				<field type="spacer" />
+				<field
+					name="ap_my_email"
+					type="textarea"
+					filter="raw"
+					default="your@email.com"
+					label="MOD_AP_QUICK_CONTACT_FIELD_AP_MY_EMAIL_LABEL"
+					description="MOD_AP_QUICK_CONTACT_FIELD_AP_MY_EMAIL_DESC" />
+				<field
+					name="ap_send_label"
+					type="text"
+					default="Send"
+					label="MOD_AP_QUICK_CONTACT_FIELD_AP_FIELD_SEND_LABEL"
+					description="MOD_AP_QUICK_CONTACT_FIELD_AP_FIELD_SEND_DESC" />
+
+				<field type="apspacer" label="REQUIRED_FIELDS_SPACER" />
+				
+				<field
+					name="ap_fields_width"
+					type="text"
+					default="250"
+					label="Fields Width"
+					description="Width for the input fileds. It is in pixels, so just put number without 'px'." />
+				<field type="spacer" />
+				<field
+					name="ap_name_label"
+					type="text"
+					default="Name:"
+					label="MOD_AP_QUICK_CONTACT_FIELD_AP_FIELD_NAME_LABEL_LABEL"
+					description="MOD_AP_QUICK_CONTACT_FIELD_AP_NAME_LABEL_DESC" />
+				
+				<field
+					name="ap_email_label"
+					type="text"
+					default="E-mail:"
+					label="MOD_AP_QUICK_CONTACT_FIELD_AP_FIELD_EMAIL_LABEL_LABEL"
+					description="MOD_AP_QUICK_CONTACT_FIELD_AP_NAME_LABEL_DESC" />
+				
+				<field
+					name="ap_subject_label"
+					type="text"
+					default="Subject:"
+					label="MOD_AP_QUICK_CONTACT_FIELD_AP_FIELD_SUBJECT_LABEL_LABEL"
+					description="MOD_AP_QUICK_CONTACT_FIELD_AP_NAME_LABEL_DESC" />
+				
+				<field
+					name="ap_message_label"
+					type="text"
+					default="Message:"
+					label="MOD_AP_QUICK_CONTACT_FIELD_AP_FIELD_MESSAGE_LABEL_LABEL"
+					description="MOD_AP_QUICK_CONTACT_FIELD_AP_NAME_LABEL_DESC" />
+			
+				
+				<field type="apspacer" label="Validation" />	
+				
+				<field
+					name="ap_send_message"
+					type="textarea"
+					filter="raw"
+					rows="2" 
+					cols="40"
+					default="Thank you, your message has been sent!"
+					label="MOD_AP_QUICK_CONTACT_FIELD_AP_SEND_MESSAGE_LABEL"
+					description="MOD_AP_QUICK_CONTACT_FIELD_AP_SEND_MESSAGE_DESC" />
+				<field
+					name="ap_error_email"
+					type="textarea"
+					filter="raw"
+					rows="2" 
+					cols="40"
+					default="You have entered incorrect email. Please fix it!"
+					label="MOD_AP_QUICK_CONTACT_FIELD_AP_ERROR_EMAIL_LABEL"
+					description="MOD_AP_QUICK_CONTACT_FIELD_AP_ERROR_EMAIL_DESC" />
+				
+				<field
+					name="ap_error_field"
+					type="textarea"
+					filter="raw"
+					rows="2" 
+					cols="40"
+					default="Please fill in all fields!"
+					label="MOD_AP_QUICK_CONTACT_FIELD_AP_ERROR_FIELD_LABEL"
+					description="MOD_AP_QUICK_CONTACT_FIELD_AP_ERROR_FIELD_DESC" />
+				
+				<field
+					name="ap_script_required"
+					type="textarea"
+					filter="raw"
+					rows="2" 
+					cols="40"
+					default="This field is required."
+					label="MOD_AP_QUICK_CONTACT_FIELD_AP_SCRIPT_REQUIRED_LABEL"
+					description="MOD_AP_QUICK_CONTACT_FIELD_AP_SCRIPT_REQUIRED_DESC" />
+				
+				<field
+					name="ap_script_email"
+					type="textarea"
+					filter="raw"
+					rows="2" 
+					cols="40"
+					default="Incorrect email."
+					label="MOD_AP_QUICK_CONTACT_FIELD_AP_SCRIPT_EMAIL_LABEL"
+					description="MOD_AP_QUICK_CONTACT_FIELD_AP_SCRIPT_EMAIL_DESC" />
+				<field
+					name="ap_script_minlength"
+					type="textarea"
+					filter="raw"
+					rows="2" 
+					cols="40"
+					default="The minimum length"
+					label="MOD_AP_QUICK_CONTACT_FIELD_AP_SCRIPT_MINLENGTH_LABEL"
+					description="MOD_AP_QUICK_CONTACT_FIELD_AP_SCRIPT_MINLENGTH_DESC" />
+				
+			</fieldset>
+			
+			<fieldset
+				name="advanced" 
+				addfieldpath="/modules/MOD_AP_QUICK_CONTACT/admin/elements">
+				<field
+					name="layout"
+					type="modulelayout"
+					label="JFIELD_ALT_LAYOUT_LABEL"
+					description="JFIELD_ALT_MODULE_LAYOUT_DESC" />
+					
+				<field
+					name="moduleclass_sfx"
+					type="text"
+					label="COM_MODULES_FIELD_MODULECLASS_SFX_LABEL"
+					description="COM_MODULES_FIELD_MODULECLASS_SFX_DESC" />
+
+				<field
+					name="cache"
+					type="list"
+					default="0"
+					class="btn-group"
+					label="COM_MODULES_FIELD_CACHING_LABEL"
+					description="COM_MODULES_FIELD_CACHING_DESC">
+					<option
+						value="1">JGLOBAL_USE_GLOBAL</option>
+					<option
+						value="0">COM_MODULES_FIELD_VALUE_NOCACHING</option>
+				</field>
+
+				<field
+					name="cache_time"
+					type="text"
+					default="900"
+					label="COM_MODULES_FIELD_CACHE_TIME_LABEL"
+					description="COM_MODULES_FIELD_CACHE_TIME_DESC" />
+				<field
+					name="cachemode"
+					type="hidden"
+					default="static">
+					<option
+						value="static"></option>
+				</field>
+				<field type="apmod" label="&lt;span class=&quot;hidden&quot;&gt;&lt;/span&gt;" />
+			</fieldset>
+		</fields>
+	</config>
+</extension>

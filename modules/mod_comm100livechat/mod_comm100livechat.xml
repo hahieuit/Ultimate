@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="module" version="1.7.0" client="site" method="upgrade">
+	<name>Comm100 Live Chat</name> 
+	<!-- Name of the Author -->
+	 <author/> 
+	<!-- Version Date of the Module -->
+	 <creationDate>2011-12-26</creationDate> 
+	<!-- Copyright information -->
+	 <copyright>Copyright (C) 2012 Comm100 Network Corp (www.comm100.com). All rights reserved.</copyright> 
+	<!-- License Information -->
+	 <license>GNU/GPL http://www.gnu.org/copyleft/gpl.html</license> 
+	<!-- Author's email address -->
+	 <authorEmail/> 
+	<!-- Author's website -->
+	 <authorUrl/> 
+	<!-- Module version number -->
+	 <version>1.7.0</version> 
+	<!-- Description of what the module does -->
+	 <description/>
+	<!-- Listing of all files that should be installed for the module to function -->
+	<files>
+		<!-- The "module" attribute signifies that this is the main controller file -->
+		<filename module="mod_comm100livechat">mod_comm100livechat.php</filename>
+		<filename>codes/chat_button_0.php</filename>
+		<filename>images/ajax_loader.gif</filename>
+		<filename>js/plugin.js</filename>
+	</files>
+
+	<!-- Optional parameters -->
+	<config>
+	        <fields name="params">
+	                <fieldset name="basic">
+
+						<field name="@spacer" type="spacer" default="" description="" label="
+
+							&lt;script type=&quot;text/javascript&quot; src=&quot;../modules/mod_comm100livechat/js/plugin.js&quot;&gt;					
+							&lt;/script&gt;
+
+							&lt;script type=&quot;text/javascript&quot;&gt;
+							setTimeout(function() {
+								init();
+							}, 10);
+							&lt;/script&gt;" />
+
+                        <field name="siteId" type="hidden" default="0" label="Site Id" description="" />
+                        <field name="planId" type="hidden" default="0" label="Select a Code Plan" description=""/>
+                        <field name="email" type="hidden" default="0" label="Email" description="" />
+
+                        <field name="cpanel_domain" type="hidden" default="0" label="cpanel domain" description="" />
+                        <field name="main_chatserver_domain" type="hidden" default="0" label="main chat server domain" description="" />
+                        <field name="standby_chatserver_domain" type="hidden" default="0" label="standby chat server domain" description="" />
+	                </fieldset>
+	        </fields>
+	</config>
+	
+</extension>

@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE install SYSTEM "http://www.joomla.org/xml/dtd/1.5/module-install.dtd">
+<extension type="module" version="2.5">
+	<name>module promotions </name>
+	<creationDate>2011</creationDate>
+	<author>vst</author>
+	<authorEmail>S</authorEmail>
+	<authorUrl>S</authorUrl>
+	<copyright>	As
+	</copyright>
+	<license>http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL</license>
+	<version>1.0</version>
+	<description>Shows promotion</description>
+	<files>
+		<filename module="mod_promotion">mod_promotion.php</filename>	
+	</files>
+	<config>
+		<fields name="params">
+			<fieldset name="basic">
+			<field
+					name="visible"
+					type="list"
+					default="3"
+					label="Number"
+					description="" >
+<option value="1">1</option>
+						<option value="2">2</option>
+			<option value="3" >3</option>
+			<option value="4" >4</option>
+			<option value="5">5</option>
+			<option value="6">6</option>
+			<option value="7">7</option>
+			<option value="8">8</option>
+			<option value="9">9</option>
+			<option value="10">10</option>
+		
+		</field>
+				<field
+					name="img1"
+					type="text"
+					default=""
+					label="image 1"
+					description="" />
+					<field
+					name="link1"
+					type="text"
+					default="http://"
+					label="link 1"
+					description="" />
+					<field
+					name="img2"
+					type="text"
+					default=""
+					label="image 2"
+					description="" />
+					<field
+					name="link2"
+					type="text"
+					default="http://"
+					label="link 2"
+					description="" />
+					<field
+					name="img3"
+					type="text"
+					default=""
+					label="image 3"
+					description="" />
+					<field
+					name="link3"
+					type="text"
+					default="http://"
+					label="link 3"
+					description="" />
+					<field
+					name="img4"
+					type="text"
+					default=""
+					label="image 4"
+					description="" />
+					<field
+					name="link4"
+					type="text"
+					default="http://"
+					label="link 4"
+					description="" />
+					<field
+					name="img5"
+					type="text"
+					default=""
+					label="image 5"
+					description="" />
+					<field
+					name="link5"
+					type="text"
+					default="http://"
+					label="link 5"
+					description="" />
+					<field
+					name="img6"
+					type="text"
+					default=""
+					label="image 6"
+					description="" />
+					<field
+					name="link6"
+					type="text"
+					default="http://"
+					label="link 6"
+					description="" />
+					<field
+					name="img7"
+					type="text"
+					default=""
+					label="image 7"
+					description="" />
+					<field
+					name="link7"
+					type="text"
+					default="http://"
+					label="link 7"
+					description="" />
+					<field
+					name="img8"
+					type="text"
+					default=""
+					label="image 8"
+					description="" />
+					<field
+					name="link8"
+					type="text"
+					default="http://"
+					label="link 8"
+					description="" />
+					<field
+					name="img9"
+					type="text"
+					default=""
+					label="image 9"
+					description="" />
+					<field
+					name="link9"
+					type="text"
+					default="http://"
+					label="link 9"
+					description="" />
+					<field
+					name="img10"
+					type="text"
+					default=""
+					label="image 10"
+					description="" />
+					<field
+					name="link10"
+					type="text"
+					default="http://"
+					label="link 10"
+					description="" />
+			</fieldset>
+		</fields>
+	</config>	
+</extension>

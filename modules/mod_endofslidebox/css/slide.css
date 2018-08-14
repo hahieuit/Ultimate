@@ -1,0 +1,50 @@
+a.close {
+    background: url("close.gif") no-repeat scroll left top transparent;
+    cursor: pointer;
+    height: 13px;
+    position: absolute;
+    right: 22px;
+    top: 22px;
+    width: 13px;
+}
+
+#relateddata a{
+    display: block;
+    font-size: 14px;
+    
+}
+
+#relateddata p{
+display: block;
+color:#555;
+font-size:11px;
+font-family: Arial,Helvetica,sans-serif;
+}
+
+#relateddata p img{
+   display: block;
+    float: left;
+    height: 70px;
+    padding-right: 0px;
+    width: 110px;
+}
+
+#relateddata h1,#relateddata h2, #relateddata h3, #relateddata h4{
+margin:0;
+padding:0;
+}
+
+#relateddata ul{
+    margin: 5px 0;
+    padding: 0 25px;
+}
+
+#relateddata ul li{
+    display: list-item;
+    padding-left: 5px;
+}
+
+#relateddata ul li a{
+font-size:13px;
+   padding: 5px 0;
+}

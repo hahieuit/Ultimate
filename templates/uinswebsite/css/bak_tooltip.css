@@ -1,0 +1,40 @@
+/*-------------- tooltip css by VST ---------*/
+.tip-wrap {
+   float: left;
+   color:#fff;
+   padding: 5px;
+   z-index:999;
+   background: #c6c6c6;
+  max-width: 350px;
+	/* Resize the image for IE6 */
+  width: expression(this.width > 350 ? "350px" : true);
+}
+ 
+.tip-title {
+/* display:none; */    /* uncomment if u don't want to display title */
+   color:#fff;
+   padding: 0;
+   margin: 0;
+   font-size: 100%;
+   font-weight: bold;
+   margin-top: -15px;
+   padding-top: 15px;
+   padding-bottom: 10px;
+   line-height:130%;
+}
+ 
+.tip-text {
+   font-size: 100%;
+   margin: 0;
+}
+
+.tip-text img{
+	display:block;
+	margin:0 auto;
+	background:#fff;
+  max-width: 350px;
+  max-height: 350px;
+	/* Resize the image for IE6 */
+  width: expression(this.width > 350 ? "350px" : true);
+  height: expression(this.height > 300 ? "300px" : true);
+}

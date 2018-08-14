@@ -1,0 +1,668 @@
+/*****************************/
+/*** Core html setup stuff ***/
+/*****************************/
+
+html {
+  height: 100%;
+  margin-bottom: 1px;
+}
+
+form {
+  margin: 0;
+  padding: 0;
+}
+
+a:link, a:visited {
+	text-decoration: none;
+	font-weight: normal;
+}
+
+a:hover {
+	text-decoration: underline;
+	font-weight: normal;
+}
+
+input.button { cursor: pointer; }
+
+p { margin-top: 0; margin-bottom: 5px; }
+
+img { border: 0 none; }
+
+#ttn-left-inner-mod-right  .moduletable  h3 { margin:0;margin-top:15px; padding-bottom:20px; line-height:18px; text-transform:uppercase; color:#8c8c8c; font-size:18px; font-family:"Trajan Pro"; text-align:center;}
+div.moduletable h3, div.module h3 {
+color:#8C8C8C;
+font-family:"Trajan Pro";
+font-size:15px;
+margin:0;
+margin-top:10px;
+padding:0;
+text-transform:uppercase;
+}
+
+/*-----ttn insert here-------*/
+#ttn-wrapper-inner{
+	margin-bottom:20px;
+}
+#ttn-mainpage-inner,
+#ttn-bottom-inner{
+	padding:10px 20px 5px 15px;
+}
+#ttn-left-inner-mod-left div.line{
+	margin-bottom:5px;
+}
+#ttn-logo{
+	padding-left:15px;
+}
+	/*--search--*/
+	div#ttn-search{
+		position:relative;
+	}
+	div#ttn-search .moduletable{
+		position:absolute;
+		top:210px;
+		right:0px;
+	}
+	div#ttn-search .moduletable h3{
+		float:left;
+		color:#8c8c8c;
+		text-transform:uppercase;
+		margin-right:5px;
+		font-size:16px;
+		margin-top:-1px;
+		padding-top:5px;
+	}
+	div#ttn-search .moduletable form{
+		float:left;
+	}
+	div#ttn-search .moduletable form div.search input#mod_search_searchword{
+		border:none;
+		background:#ededed;
+		height:21px;
+		width:148px;
+		font-size:14px;
+		line-height:23px;
+		padding:2px;
+		margin:0;
+	}
+	/*----------*/
+	
+	/*----nav---*/
+	div#ttn-nav-inner{
+		padding:10px 5px;
+	}
+	div#ttn-nav-inner ul{
+		text-align:right;
+	}
+	div#ttn-nav-inner li,
+	div#ttn-nav-inner ul{
+		margin:0;
+		padding:0;
+		list-style:none;
+	}
+	div#ttn-nav-inner li{
+		display:inline;
+	}
+	div#ttn-nav-inner a{
+		color:#666666;
+		font-size:14px;
+		text-transform:uppercase;
+		padding:0 10px;
+	}
+	div#ttn-nav-inner li:hover a,
+	div#ttn-nav-inner li#current a{
+		color:#bf0000;
+		text-decoration:underline;
+	}
+	/*----------*/
+	
+	/*---user1---*/
+	div#user1{
+		width:100%;
+		display:block;
+		overflow:hidden;
+		text-align:justify;
+	}
+	div#user1 div{
+		display:block;
+		overflow:hidden;
+		background:url(../images/mid_user1_bg.jpg) top left repeat-y;
+	}
+	div#user1 div div{
+		display:block;
+		overflow:hidden;
+		background:url(../images/top_user1_bg.jpg) top left no-repeat;
+	}
+	div#user1 div div div{
+		display:block;
+		overflow:hidden;
+		background:url(../images/bot_user1_bg.jpg) bottom left no-repeat;
+	}
+	div#user1 div div div div{
+		padding:30px 40px;
+		line-height:30px;
+		color:#000000;
+		background:none;
+	}
+	div#user1 h3{
+		font-size:26px;
+		font-weight:normal;
+		text-transform:uppercase;
+		margin-bottom:15px;
+		color:#3f3f3f;
+	}
+	/*-----------*/
+	
+	/*----user2----*/
+	div#user2{
+		display:block;
+		overflow:hidden;
+		width:100%;
+	}
+	div#review{
+		color:#bf0000;
+		font-family:"Bookman Old Style";
+		font-size:30px;
+		text-align:center;
+		line-height:35px;
+		font-style:italic;
+	}
+	div#author{
+		color:#666666;
+		font-family:"Century Gothic";
+		font-size:16px;
+		text-align:center;
+		margin-top:10px;
+	}
+	/*-------------*/
+	
+	/*---latestnews---*/
+	#latestnews div.moduletable{
+		padding-left:30px;
+	}
+	#latestnews div.moduletable h3{
+		font-size:16px;
+		color:#3f3f3f;
+		margin-bottom:10px;
+	}
+	#latestnews div.moduletable ul{
+		margin:0;
+		padding: 0 0 0 5px;
+	}
+	#latestnews div.moduletable li{
+		margin:0;
+		padding:2px 0;
+		list-style:none;
+	}
+	#latestnews div.moduletable li a{
+		color:#8c8c8c;
+	}
+	/*----------------*/
+	
+	/*--international--*/
+	div#international .moduletable{
+		padding-left:75px;
+		border-left:2px solid #e7e7e7;
+	}
+	div#international .moduletable img{
+		margin:0 auto;
+	}
+	/*-----------------*/
+	/*---use3---*/
+	#ttn-user3-inner div.module_featpro{
+		width:100%;
+		display:block;
+		overflow:hidden;
+		background:url(../images/mid_user3_bg.jpg) top left repeat-y;
+	}
+	#ttn-user3-inner div.module_featpro div{
+		background:url(../images/top_user3_bg.jpg) top left no-repeat;
+	}
+	#ttn-user3-inner div.module_featpro div div{
+		background:url(../images/bot_user3_bg.jpg) bottom left no-repeat;
+	}
+	#ttn-user3-inner div.module_featpro div div div{
+		background:none;
+		padding:20px 30px;
+	}
+	#ttn-user3-inner div.module_featpro div div div h3{
+		margin:0 0 10px 0;
+		padding:0;
+		text-transform:uppercase;
+		color:#ff7f00;
+		font-size:24px;
+		font-weight:normal;
+	}
+	#ttn-user3-inner div.module_featpro div div div ul{
+		margin:0;
+	}
+	/*----------*/
+	/*---featurepro---*/
+]	#ttn-left-inner-mod-right h3{
+		font-size:37px;
+		font-weight:normal;
+		text-transform:uppercase;
+		line-height:43px;
+		margin-bottom:10px;
+		text-align:left;
+		
+	}
+	#ttn-left-inner-mod-right .moduletable{
+		text-align:left;
+		width:271px;
+	}
+	/*----------------*/
+	/*---right---*/
+	#ttn-right-inner div.module_catpro{
+		display:block;
+		width:249px;
+		background:url(../images/mid_mod_list_pro_bg.jpg) top left repeat-y;
+	}
+	#ttn-right-inner div.module_catpro div{
+		display:block;
+		background:url(../images/top_mod_list_pro_bg.jpg) top left no-repeat;
+	}
+	#ttn-right-inner div.module_catpro div div{
+		display:block;
+		background:url(../images/bot_mod_list_pro_bg.jpg) bottom left no-repeat;
+	}
+	#ttn-right-inner div.module_catpro div div div{
+		background:none;
+		padding:10px 10px 10px 0;
+		color:#FFFFFF;
+	}
+
+	#ttn-right-inner div.module_catpro div div div h3{
+		padding:0;
+		font-weight:normal;
+		font-size:20px;
+		text-transform:uppercase;
+		line-height:22px;
+		font-family:"Trajan Pro";
+		margin:5px 0 10px 20px;
+		background:url(../images/products_header.jpg) top left no-repeat;
+		text-indent:-999990px;
+		height:40px;
+		width:205px;
+	}
+	#ttn-right-inner div.module_catpro div div div a{
+		color:#FFFFFF;
+		font-size:14px;
+		text-transform:uppercase;
+		margin:5px 0;
+	}
+	#ttn-right-inner div.module_catpro,
+	#ttn-right-inner div.module{
+		margin-bottom:10px;
+	}
+	#ttn-right-inner div.module{
+	}
+	div.module_catpro h3{
+		margin:5px 0 10px;
+	}
+	/*-----------*/
+	/*---links---*/
+	#ttn-bottom-inner{
+		padding:0px 20px;
+	}
+	#bottom-mod-left-inner{
+		width:100%;
+		display:block;
+		overflow:hidden;
+		height:181px;
+		background:url(../images/mod_links_bg.jpg) top left no-repeat;
+	}
+	#bottom-mod-left-inner div.moduletable{
+		width:655px;
+		display:block;
+		overflow:hidden;
+		float:left;
+		padding:50px 5px 10px 20px;
+	}
+	#bottom-mod-left-inner div.moduletable_infocom{
+		width:195px;
+		display:block;
+		overflow:hidden;
+		float:right;
+		padding:40px 30px 10px 0px;
+		text-align:right;
+		font-size:11px;
+		color:#666666;
+	}
+	div#ttn-mod-links ul,
+	div#ttn-mod-links li{
+		margin:0;
+		list-style:none;
+	}
+	div#ttn-mod-links ul{
+		float:left;
+	}
+	ul#col1,ul#col2,ul#col3,ul#col4,ul#col5{
+		padding:15px;
+	}
+	ul#col1,ul#col2,ul#col3,ul#col4{
+		border-right:1px solid #ccc;
+	}
+	ul#col1 li,ul#col2 li,ul#col3 li,ul#col4 li,ul#col5 li{
+		padding-bottom:5px;
+	}
+	div#ttn-mod-links a{
+		color:#636363;
+		font-size:14px;
+	}
+	div.moduletable_infocom p{
+		margin:0;
+		line-height:160%;
+		font-size:12px;
+	}
+	/*-----------*/
+	/*---copyright---*/
+	div#copyright{
+		text-transform:uppercase;
+		font-size:14px;
+		color:#8c8c8c;
+	}
+	/*---------------*/
+	
+	/*----content----*/
+	div#content-inner{
+		padding-right:3px;
+		position:relative;
+		z-index:1;
+	}
+	/*---------------*/
+	
+	/*----com VM----*/
+	div#product_list,
+	div#ttn_prdDetail_wrapper,
+	div#ttn-list-cat{
+		width:100%;
+		display:block;
+		/*overflow:hidden;*/
+		background:url(../images/mid_com_bg.jpg) top left repeat-y;
+	}
+	div#product_list_inner1{
+		width:100%;
+		display:block;
+		/*overflow:hidden;*/
+		background:url(../images/top_com_bg.jpg) top left no-repeat;
+	}
+	div#product_list_inner2{
+		width:100%;
+		display:block;
+		/*overflow:hidden;*/
+		background:url(../images/bot_com_bg.jpg) bottom left no-repeat;
+	}
+	div#product_list_inner3{
+		padding:30px;
+		overflow:hidden;
+	}
+	.ttn-sbname-pro{
+		padding-left:9px;
+		color:#000000;
+		font-size:12px;
+	}
+	.browseProductTitle a{
+		color:#bf0000;
+		font-size:15px;
+	}
+	.browseProductImageContainer a{
+		padding-left:8px;
+	}
+	ul.pagination{
+		margin:0;
+		padding:0;
+		width:auto!important;
+	}
+	ul.pagination li{
+		color:#3f3f3f;
+	}
+	.pagenav{
+		/*padding:0 10px 0 8px;*/
+		/*border-right:1px solid #000;*/
+		color:#3f3f3f;
+	}
+	span.pagenav{
+		/*padding:0 6px 0 4px;*/
+	}
+	ul.pagination li{
+		padding:0;
+		margin:0;
+		border-right:1px solid #000;
+	}
+	ul.pagination li a{
+		padding:0 8px 0 4px;
+	}
+	ul.pagination li span{
+		padding:0 8px 0 4px;	
+	}
+	div#ttn-fp{
+		width:100%;
+		display:block;
+		
+		background:url(../images/mid_user3_bg.jpg) top left repeat-y;
+	}
+	div#ttn-fp-inner1{
+		width:100%;
+		display:block;
+		
+		background:url(../images/top_user3_bg.jpg) top left no-repeat;
+	}
+	div#ttn-fp-inner2{
+		width:100%;
+		display:block;
+		
+		background:url(../images/bot_user3_bg.jpg) bottom left no-repeat;
+	}
+	div#ttn-fp-inner3{
+		padding:20px 30px;
+		overflow:hidden;
+	}
+	#ttn-fp-inner3 h3{
+		margin:0 0 10px 0;
+		padding:0;
+		text-transform:uppercase;
+		color:#ff7f00;
+		font-size:24px;
+		font-weight:normal;
+		font-family:"Trajan Pro";
+	}
+	div#ttn-fp-colleft{
+		width:95px;
+		display:block;
+		
+		float:left;
+	}
+	div#ttn-fp-colright{
+		width:730px;
+		display:block;
+		overflow:hidden;
+		float:left;
+	}
+	#ttn-fp-namepro h4{
+		margin:0;
+		padding:0;
+		text-transform:uppercase;
+		font-size:16px;
+		color:#bf0000;
+		font-weight:normal;
+	}
+	#ttn-fp-namepro span.ttn_prdName_subtitle{
+		color:#000000;
+		font-size:11px;
+	}
+	div#ttn-desc-rm{
+		text-align:right;
+	}
+	div#ttn-desc-rm a{
+		color:#bf0000;
+		font-size:13px;
+	}
+	div#ttn-list-cat a{
+		color:#BF0000;
+		text-transform:uppercase;
+		margin-bottom:10px;
+	}
+	div#ttn-list-cat a img{
+		margin-bottom:10px;
+		margin-top:10px;
+	}
+	h3#ttn-categories,
+	h3#ttn-browsepage-title{
+		margin:10px 0;
+		padding:0;
+		text-transform:uppercase;
+		font-family:"Trajan Pro";
+		font-size:24px;
+		font-weight:normal;
+		color:#3f3f3f;
+	}
+	/*--------------*/
+	input.fastcontactText{
+		width:172px;
+		height:21px;
+		border:none;
+		background:#eaebec;
+		color:#808182;
+		padding:2px 4px;
+	}
+	textarea.fastcontactTextarea{
+		width: 232px;
+		height:56px;
+		background:#eaebec;
+		border:none;
+		color:#808182;
+		padding:2px 4px;
+	}
+	input.fastcontactButton{
+		height:82px;
+		background:#eaebec;
+		border:none;
+		color:#808182;
+	}
+	
+	/*----com rsform----*/
+	.ttn-com a{
+		color:#fff;
+	}
+	.ttn-nocom #content-inner a,
+	.ttn-com form#userForm a{
+		color:#BF0000;
+	}
+	form#userForm{
+		width:604px;
+		margin-left:100px;
+		color:#000;
+	}
+	#emailinfo a {
+		background:url(/images/M_images/emailButton.png) center left no-repeat;
+		padding-left:40px;
+	}
+	#telinfo{
+		background:url(/images/M_images/con_tel.png) center left no-repeat;
+		padding-left:40px;
+	}
+	#salesmanager{
+		background:url(/images/M_images/con_mobile.png) center left no-repeat;
+		padding-left:40px;
+	}
+	#faxinfo{
+		background:url(/images/M_images/con_fax.png) center left no-repeat;
+		padding-left:40px;
+	}
+	form#userForm div.componentheading{
+		font-size:26px;
+		font-weight:normal;
+		text-transform:uppercase;
+		margin-bottom:15px;
+		color:#3f3f3f;
+		font-family:"Trajan Pro";
+	}
+    div#address{
+		padding-left:40px;
+	}
+    div#copyright a{
+		color:#999;
+		text-decoration:none;
+    }
+	div#copyright a:hover{
+		text-decoration:underline;
+	}
+	div.browseProductContainer{
+		text-align:center;
+	}
+	a#active_menu{
+		font-weight:bold;
+	}
+	/*------------------*/
+/*---------------------------*/
+
+/*-----------VST css menu----------------*/
+
+	.module_catpro *{
+		margin:0;
+		padding:0;
+	}
+	
+	.module_catpro ul{
+	}
+	
+	.module_catpro ul li {
+		list-style-type:none;
+		list-style-image:none;
+		position:relative;
+	}
+
+	.module_catpro ul li a{
+		display:block;
+		margin:0!important;
+		padding:0 0 0 20px;
+		outline:none;	
+	}	
+
+	.module_catpro ul li a.parent {
+		background:url(../images/menu_arrow.gif) no-repeat scroll 5px 5px;
+		padding-right:9px;
+	}
+
+	/* css for sublevel */
+	.module_catpro ul.level0 li ul,
+	.module_catpro ul.level0 li:hover ul, .module_catpro ul.level0 li.sfhover ul,
+	.module_catpro ul.level0 li:hover ul ul, .module_catpro ul.level0 li.sfhover ul ul{
+		position:absolute;
+		left:-999em; 
+	}
+	
+	.module_catpro ul.level0 li:hover ul, .module_catpro ul.level0 li.sfhover ul,
+	.module_catpro ul.level0 li li:hover ul, .module_catpro ul.level0 li li.sfhover ul{
+		position:absolute;
+		left:auto;
+		top:-10px;
+		margin-left:-189px;
+		z-index:1000;			
+	}
+	
+	.module_catpro ul.level0 ul{
+		width:180px;
+		padding:10px 1px 10px 10px;
+		background:#EB1C24;
+	}
+			
+	.module_catpro ul.level0 ul li{		
+	}
+	
+	.module_catpro ul.level0 ul li a:link,
+	.module_catpro ul.level0 ul li a:visited{
+		display:block;
+		color:#fff!important;
+		padding:0!important;	
+		margin:0!important;
+		text-align:right;
+	}	
+		
+	.module_catpro ul.level0 ul li a:hover{
+	}	
+
+#product_list table{
+	float:left;
+}
+dt.article-info-term {display: none;}

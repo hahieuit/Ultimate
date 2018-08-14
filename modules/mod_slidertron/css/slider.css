@@ -1,0 +1,93 @@
+  #slider {
+        position: relative;
+        width: 630px;
+    }
+    #slider .viewer {
+        width: 630px;
+        height: 240px;
+        overflow: hidden;
+    }
+    #slider .viewer .reel {
+        display: none;
+        height: 240px;
+    }
+    #slider .viewer .reel .slide {
+        position: relative;
+        width: 630px;
+        height: 240px;
+    }
+    ul.myList {
+        padding: 0;
+        margin:0;
+        width: 2000px;
+    }
+    ul.myList li {
+        list-style: none outside none;
+        margin: 0px 10px 0px 0px;
+        float: left;
+        width: 305px;
+        height: 230px;
+        text-align:center;
+        border: 0px solid #DEDEDE;
+        padding: 0px;
+        background: none repeat scroll 0% 0% #F9F9F9;
+    }
+    
+    ul.myList li.col2 {        
+        margin: 0px 10px 0px 0px;        
+        width: 620px;   
+        text-align:center;
+    }
+    ul.myList li.col2 img{
+       
+    }
+    
+    ul.myList li div {
+        float: right;
+        margin: 0px 4px 0px 0px;
+    }
+    ul.myList li div a {
+        background: none repeat scroll 0% 0% #DEDEDE;
+        border: 1px solid #DEDEDE;
+        padding: 0px 12px;
+        border-radius: 3px;
+        display: inline-block;
+        font-size: 10px;
+        color: #999;
+        text-decoration: none;
+        cursor: pointer;
+        margin-bottom: 20px;
+        line-height: 21px;
+        font-family: "HelveticaNeue","Helvetica Neue",Helvetica,Arial,sans-serif;
+    }
+    
+    #slider .indicator {
+        margin: 0px auto 0px;
+    }
+    #slider .indicator ul {
+        list-style: none outside none;
+        padding: 0px;
+        margin: 0px;
+        text-align: center;
+        float: right;
+    }
+    #slider .indicator ul li {
+	    width: 8px;
+	    height: 8px;
+	    text-indent: -9999em;
+	    margin: 8px;
+	    background: #000000;
+	    border-radius: 10px;
+	}
+    #slider .indicator ul li.active
+    {	
+	    width: 8px;
+	    height: 8px;
+	    text-indent: -9999em;
+	    margin: 0px 2px;
+	    background: #B11A13;
+	    border-radius: 10px;	
+    }
+    .blog-featured .leading-0 h1 {
+        margin-top: 0px;
+    }

@@ -1,0 +1,671 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="module" version="3.1" client="site" method="upgrade">
+	<name>mod_newmenu</name>
+	<author>Joomla! Project</author>
+	<creationDate>July 2006</creationDate>
+	<copyright>Copyright (C) 2005 - 2016 Open Source Matters. All rights reserved.</copyright>
+	<license>GNU General Public License version 2 or later; see LICENSE.txt</license>
+	<authorEmail>admin@joomla.org</authorEmail>
+	<authorUrl>www.joomla.org</authorUrl>
+	<version>3.0.0</version>
+	<description>MOD_NEWMENU_XML_DESCRIPTION</description>
+	<files>
+		<filename module="mod_newmenu">mod_newmenu.php</filename>
+		<folder>tmpl</folder>
+	</files>
+	<languages>
+		<language tag="en-GB">en-GB.mod_newmenu.ini</language>
+		<language tag="en-GB">en-GB.mod_newmenu.sys.ini</language>
+	</languages>
+	<help key="JHELP_EXTENSIONS_MODULE_MANAGER_FOOTER" />
+	<config>
+		<fields name="params">
+			<fieldset name="basic">
+				<field
+					name="img1"
+					type="text"
+					default=""
+					label="image 1"
+					description="" />
+				<field
+					name="link1"
+					type="text"
+					default="http://"
+					label="link 1"
+					description="" />
+				<field
+					name="img2"
+					type="text"
+					default=""
+					label="image 2"
+					description="" />
+				<field
+					name="link2"
+					type="text"
+					default="http://"
+					label="link 2"
+					description="" />
+				<field
+					name="img3"
+					type="text"
+					default=""
+					label="image 3"
+					description="" />
+				<field
+					name="link3"
+					type="text"
+					default="http://"
+					label="link 3"
+					description="" />
+				<field
+					name="img4"
+					type="text"
+					default=""
+					label="image 4"
+					description="" />
+				<field
+					name="link4"
+					type="text"
+					default="http://"
+					label="link 4"
+					description="" />
+				<field
+					name="img5"
+					type="text"
+					default=""
+					label="image 5"
+					description="" />
+				<field
+					name="link5"
+					type="text"
+					default="http://"
+					label="link 5"
+					description="" />
+				<field
+					name="img6"
+					type="text"
+					default=""
+					label="image 6"
+					description="" />
+				<field
+					name="link6"
+					type="text"
+					default="http://"
+					label="link 6"
+					description="" />
+				<field
+					name="img7"
+					type="text"
+					default=""
+					label="image 7"
+					description="" />
+				<field
+					name="link7"
+					type="text"
+					default="http://"
+					label="link 7"
+					description="" />
+				<field
+					name="img8"
+					type="text"
+					default=""
+					label="image 8"
+					description="" />
+				<field
+					name="link8"
+					type="text"
+					default="http://"
+					label="link 8"
+					description="" />
+				<field
+					name="img9"
+					type="text"
+					default=""
+					label="image 9"
+					description="" />
+				<field
+					name="link9"
+					type="text"
+					default="http://"
+					label="link 9"
+					description="" />
+				<field
+					name="img10"
+					type="text"
+					default=""
+					label="image 10"
+					description="" />
+				<field
+					name="link10"
+					type="text"
+					default="http://"
+					label="link 10"
+					description="" />
+				<field
+					name="img11"
+					type="text"
+					default=""
+					label="image 11"
+					description="" />
+				<field
+					name="link11"
+					type="text"
+					default="http://"
+					label="link 11"
+					description="" />
+				<field
+					name="img12"
+					type="text"
+					default=""
+					label="image 12"
+					description="" />
+				<field
+					name="link12"
+					type="text"
+					default="http://"
+					label="link 12"
+					description="" />
+				<field
+					name="img13"
+					type="text"
+					default=""
+					label="image 13"
+					description="" />
+				<field
+					name="link13"
+					type="text"
+					default="http://"
+					label="link 13"
+					description="" />
+				<field
+					name="img14"
+					type="text"
+					default=""
+					label="image 14"
+					description="" />
+				<field
+					name="link14"
+					type="text"
+					default="http://"
+					label="link 14"
+					description="" />
+				<field
+					name="img15"
+					type="text"
+					default=""
+					label="image 15"
+					description="" />
+				<field
+					name="link15"
+					type="text"
+					default="http://"
+					label="link 15"
+					description="" />
+				<field
+					name="img16"
+					type="text"
+					default=""
+					label="image 16"
+					description="" />
+				<field
+					name="link16"
+					type="text"
+					default="http://"
+					label="link 16"
+					description="" />
+				<field
+					name="img17"
+					type="text"
+					default=""
+					label="image 17"
+					description="" />
+				<field
+					name="link17"
+					type="text"
+					default="http://"
+					label="link 17"
+					description="" />
+				<field
+					name="img18"
+					type="text"
+					default=""
+					label="image 18"
+					description="" />
+				<field
+					name="link18"
+					type="text"
+					default="http://"
+					label="link 18"
+					description="" />
+				<field
+					name="img19"
+					type="text"
+					default=""
+					label="image 19"
+					description="" />
+				<field
+					name="link19"
+					type="text"
+					default="http://"
+					label="link 19"
+					description="" />
+				<field
+					name="img20"
+					type="text"
+					default=""
+					label="image 20"
+					description="" />
+				<field
+					name="link20"
+					type="text"
+					default="http://"
+					label="link 20"
+					description="" />
+				<field
+					name="img21"
+					type="text"
+					default=""
+					label="image 21"
+					description="" />
+				<field
+					name="link21"
+					type="text"
+					default="http://"
+					label="link 21"
+					description="" />
+				<field
+					name="img22"
+					type="text"
+					default=""
+					label="image 22"
+					description="" />
+				<field
+					name="link22"
+					type="text"
+					default="http://"
+					label="link 22"
+					description="" />
+				<field
+					name="img23"
+					type="text"
+					default=""
+					label="image 23"
+					description="" />
+				<field
+					name="link23"
+					type="text"
+					default="http://"
+					label="link 23"
+					description="" />
+				<field
+					name="img24"
+					type="text"
+					default=""
+					label="image 24"
+					description="" />
+				<field
+					name="link24"
+					type="text"
+					default="http://"
+					label="link 24"
+					description="" />
+				<field
+					name="img25"
+					type="text"
+					default=""
+					label="image 25"
+					description="" />
+				<field
+					name="link25"
+					type="text"
+					default="http://"
+					label="link 25"
+					description="" />
+				<field
+					name="img26"
+					type="text"
+					default=""
+					label="image 26"
+					description="" />
+				<field
+					name="link26"
+					type="text"
+					default="http://"
+					label="link 26"
+					description="" />
+				<field
+					name="img27"
+					type="text"
+					default=""
+					label="image 27"
+					description="" />
+				<field
+					name="link27"
+					type="text"
+					default="http://"
+					label="link 27"
+					description="" />
+				<field
+					name="img28"
+					type="text"
+					default=""
+					label="image 28"
+					description="" />
+				<field
+					name="link28"
+					type="text"
+					default="http://"
+					label="link 28"
+					description="" />
+				<field
+					name="img29"
+					type="text"
+					default=""
+					label="image 29"
+					description="" />
+				<field
+					name="link29"
+					type="text"
+					default="http://"
+					label="link 29"
+					description="" />
+				<field
+					name="img30"
+					type="text"
+					default=""
+					label="image 30"
+					description="" />
+				<field
+					name="link30"
+					type="text"
+					default="http://"
+					label="link 30"
+					description="" />
+				<field
+					name="img31"
+					type="text"
+					default=""
+					label="image 31"
+					description="" />
+				<field
+					name="link31"
+					type="text"
+					default="http://"
+					label="link 31"
+					description="" />
+				<field
+					name="img32"
+					type="text"
+					default=""
+					label="image 32"
+					description="" />
+				<field
+					name="link32"
+					type="text"
+					default="http://"
+					label="link 32"
+					description="" />
+				<field
+					name="img33"
+					type="text"
+					default=""
+					label="image 33"
+					description="" />
+				<field
+					name="link33"
+					type="text"
+					default="http://"
+					label="link 33"
+					description="" />
+				<field
+					name="img34"
+					type="text"
+					default=""
+					label="image 34"
+					description="" />
+				<field
+					name="link34"
+					type="text"
+					default="http://"
+					label="link 34"
+					description="" />
+				<field
+					name="img35"
+					type="text"
+					default=""
+					label="image 35"
+					description="" />
+				<field
+					name="link35"
+					type="text"
+					default="http://"
+					label="link 35"
+					description="" />
+				<field
+					name="img36"
+					type="text"
+					default=""
+					label="image 36"
+					description="" />
+				<field
+					name="link36"
+					type="text"
+					default="http://"
+					label="link 36"
+					description="" />
+				<field
+					name="img37"
+					type="text"
+					default=""
+					label="image 37"
+					description="" />
+				<field
+					name="link37"
+					type="text"
+					default="http://"
+					label="link 37"
+					description="" />
+				<field
+					name="img38"
+					type="text"
+					default=""
+					label="image 38"
+					description="" />
+				<field
+					name="link38"
+					type="text"
+					default="http://"
+					label="link 38"
+					description="" />
+				<field
+					name="img39"
+					type="text"
+					default=""
+					label="image 39"
+					description="" />
+				<field
+					name="link39"
+					type="text"
+					default="http://"
+					label="link 39"
+					description="" />
+				<field
+					name="img40"
+					type="text"
+					default=""
+					label="image 40"
+					description="" />
+				<field
+					name="link40"
+					type="text"
+					default="http://"
+					label="link 40"
+					description="" />
+				<field
+					name="img41"
+					type="text"
+					default=""
+					label="image 41"
+					description="" />
+				<field
+					name="link41"
+					type="text"
+					default="http://"
+					label="link 41"
+					description="" />
+				<field
+					name="img42"
+					type="text"
+					default=""
+					label="image 42"
+					description="" />
+				<field
+					name="link42"
+					type="text"
+					default="http://"
+					label="link 42"
+					description="" />
+				<field
+					name="img43"
+					type="text"
+					default=""
+					label="image 43"
+					description="" />
+				<field
+					name="link43"
+					type="text"
+					default="http://"
+					label="link 43"
+					description="" />
+				<field
+					name="img44"
+					type="text"
+					default=""
+					label="image 44"
+					description="" />
+				<field
+					name="link44"
+					type="text"
+					default="http://"
+					label="link 44"
+					description="" />
+				<field
+					name="img45"
+					type="text"
+					default=""
+					label="image 45"
+					description="" />
+				<field
+					name="link45"
+					type="text"
+					default="http://"
+					label="link 45"
+					description="" />
+				<field
+					name="img46"
+					type="text"
+					default=""
+					label="image 46"
+					description="" />
+				<field
+					name="link46"
+					type="text"
+					default="http://"
+					label="link 46"
+					description="" />
+				<field
+					name="img47"
+					type="text"
+					default=""
+					label="image 47"
+					description="" />
+				<field
+					name="link47"
+					type="text"
+					default="http://"
+					label="link 47"
+					description="" />
+				<field
+					name="img48"
+					type="text"
+					default=""
+					label="image 48"
+					description="" />
+				<field
+					name="link48"
+					type="text"
+					default="http://"
+					label="link 48"
+					description="" />
+				<field
+					name="img49"
+					type="text"
+					default=""
+					label="image 49"
+					description="" />
+				<field
+					name="link49"
+					type="text"
+					default="http://"
+					label="link 49"
+					description="" />
+				<field
+					name="img50"
+					type="text"
+					default=""
+					label="image 50"
+					description="" />
+				<field
+					name="link50"
+					type="text"
+					default="http://"
+					label="link 50"
+					description="" />
+			</fieldset>
+
+			<fieldset name="advanced">
+				<field
+					name="layout"
+					type="modulelayout"
+					label="JFIELD_ALT_LAYOUT_LABEL"
+					description="JFIELD_ALT_MODULE_LAYOUT_DESC"
+				/>
+
+				<field
+					name="moduleclass_sfx"
+					type="textarea"
+					label="COM_MODULES_FIELD_MODULECLASS_SFX_LABEL"
+					description="COM_MODULES_FIELD_MODULECLASS_SFX_DESC"
+					rows="3"
+				/>
+
+				<field
+					name="cache"
+					type="list"
+					label="COM_MODULES_FIELD_CACHING_LABEL"
+					description="COM_MODULES_FIELD_CACHING_DESC"
+					default="1"
+					>
+					<option value="1">JGLOBAL_USE_GLOBAL</option>
+					<option value="0">COM_MODULES_FIELD_VALUE_NOCACHING</option>
+				</field>
+
+				<field
+					name="cache_time"
+					type="text"
+					label="COM_MODULES_FIELD_CACHE_TIME_LABEL"
+					description="COM_MODULES_FIELD_CACHE_TIME_DESC"
+					default="900"
+				/>
+
+				<field
+					name="cachemode"
+					type="hidden"
+					default="static"
+					>
+					<option value="static"></option>
+				</field>
+			</fieldset>
+		</fields>
+	</config>
+</extension>

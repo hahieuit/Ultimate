@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="component" version="2.5" method="upgrade">
+    <name>com_vmimport</name>
+    <creationDate>2014-03-21</creationDate>
+    <copyright>Copyright (C) 2014. All rights reserved.</copyright>
+    <license>GNU General Public License version 2 or later; see LICENSE.txt</license>
+    <author>Vien</author>
+    <authorEmail>viennguyenvan84@gmail.com</authorEmail>
+    <authorUrl>http://joomdevelopers.com</authorUrl>
+    <version>1.0.0</version>
+    <description>VM Import Tool for Ultimate Inspiration</description>
+    
+    <install> <!-- Runs on install -->
+        <sql>
+            <file driver="mysql" charset="utf8">sql/install.mysql.utf8.sql</file>
+        </sql>
+    </install>
+    <uninstall> <!-- Runs on uninstall -->
+        <sql>
+            <file driver="mysql" charset="utf8">sql/uninstall.mysql.utf8.sql</file>
+        </sql>
+    </uninstall>
+
+    <files folder="site">
+        <filename>index.html</filename>       
+    </files>
+    <languages folder="site">
+        
+			<language tag="en-GB">language/en-GB.com_vmimport.ini</language>
+    </languages>
+    <administration>
+        <menu img="components/com_vmimport/assets/images/s_com_vmimport.png" >COM_VMIMPORT</menu>
+        <submenu>
+            
+			<menu link="option=com_vmimport&amp;view=import" view="import" img="components/com_vmimport/assets/images/s_imports.png" alt="Vmimport/Imports">COM_VMIMPORT_TITLE_IMPORT</menu>
+
+        </submenu>
+        <files folder="administrator">
+            <filename>access.xml</filename>
+            <filename>config.xml</filename>
+            <filename>controller.php</filename>
+            <filename>index.html</filename>
+            <filename>vmimport.php</filename>
+            <folder>controllers</folder>
+            <folder>assets</folder>
+            <folder>helpers</folder>
+            <folder>models</folder>
+            <folder>sql</folder>
+            <folder>tables</folder>
+            <folder>views</folder>
+        </files>
+        <languages folder="administrator">
+            
+			<language tag="en-GB">language/en-GB.com_vmimport.ini</language>
+			<language tag="en-GB">language/en-GB.com_vmimport.sys.ini</language>
+        </languages>
+    </administration>
+</extension>
+<!-- Component built by the Joomla Component Creator -->
+<!-- http://www.notwebdesign.com/joomla-component-creator/ -->
